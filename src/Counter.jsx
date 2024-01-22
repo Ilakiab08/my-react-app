@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-
+import Filter from './Filter.jsx'; 
 import './App.css';
+
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -28,4 +29,4 @@ const Counter = () => {
   );
 };
 
-export default App;
+export default Counter;

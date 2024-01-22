@@ -1,8 +1,8 @@
 
 
 import React from 'react';
-import Counter from './App';
-import Filter from './Filter'; 
+import Counter from './Counter.jsx';
+import Filter from './Filter.jsx'; 
 import './App.css';
 
 const App = () => {
@@ -14,4 +14,4 @@ const App = () => {
   );
 };
 
-export default main;
+export default App;
