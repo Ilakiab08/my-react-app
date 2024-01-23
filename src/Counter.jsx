@@ -1,32 +1,20 @@
 import React, { useState } from 'react';
-import Filter from './Filter.jsx'; 
-import './App.css';
 
+function Counter() {
+ const [count, setCount] = useState(0);
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
+ const increment = () => setCount(count + 1);
+ const decrement = () => setCount(count - 1);
+ const reset = () => setCount(0);
 
-  const handleIncrement = () => {
-    setCount(count + 1);
-  };
-
-  const handleDecrement = () => {
-    setCount(count - 1);
-  };
-
-  const handleReset = () => {
-    setCount(0);
-  };
-
-  return (
+ return (
     <div>
-      <h2>Counter</h2>
-      <p>Current Value: {count}</p>
-      <button onClick={handleIncrement}>Increment</button>
-      <button onClick={handleDecrement}>Decrement</button>
-      <button onClick={handleReset}>Reset</button>
+      <p>Current count: {count}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+      <button onClick={reset}>Reset</button>
     </div>
-  );
-};
+ );
+}
 
-export default Counter;
+export default Counter();

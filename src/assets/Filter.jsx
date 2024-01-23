@@ -1,43 +1,25 @@
 import React, { useState } from 'react';
 
-const Filter = () => {
-  const initialList = [
-    'Apple',
-    'Banana',
-    'Orange',
-    'Strawberry',
-    'Grapes',
-    'Mango',
-  ];
+function Filter() {
+ const [filterText, setFilterText] = useState('');
+ const [items, setItems] = useState(['Item 1', 'Item 2', 'Item 3']);
+ const [filteredItems, setFilteredItems] = useState(items);
 
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filteredItems, setFilteredItems] = useState(initialList);
+ const handleFilterChange = (event) => {
+    setFilterText(event.target.value);
+    setFilteredItems(items.filter(item => item.includes(event.target.value)));
+ };
 
-  const handleInputChange = (e) => {
-    const term = e.target.value;
-    setSearchTerm(term);
-    const filteredList = initialList.filter(item =>
-      item.toLowerCase().includes(term.toLowerCase())
-    );
-    setFilteredItems(filteredList);
-  };
-
-  return (
+ return (
     <div>
-      <h2>Filter</h2>
-      <input
-        type="text"
-        placeholder="Search..."
-        value={searchTerm}
-        onChange={handleInputChange}
-      />
+      <input type="text" value={filterText} onChange={handleFilterChange} />
       <ul>
         {filteredItems.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
       </ul>
     </div>
-  );
-};
+ );
+}
 
-export default Filter;
+export default Filter();
