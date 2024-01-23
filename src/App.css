@@ -1,12 +1,49 @@
 
-
-
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 14px;
+}
+
+
+
 #root {
   background-image: url('https://images.unsplash.com/photo-1705582866703-b4fd3bae6ddd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   max-width: 1280px;
