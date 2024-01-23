@@ -1,11 +1,5 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
-/* App.css */
+
 
 body {
   font-family: 'Arial', sans-serif;
@@ -13,27 +7,58 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
-.container {
-  max-width: 800px;
+#root {
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
+  text-align: center;
 }
 
-h2 {
-  color: #333;
+.input-field{
+padding:20px;
+display:block;
+margin:20px auto;
+border:3px solid #4caf50;
+text-align:left;
+font-size:2em;
+color:#4caf50;
+border-radius:6px;
 }
 
-input {
-  padding: 8px;
-  margin-bottom: 10px;
-}
+.increase{
+  float:right;
+  cursor:pointer;
+  }
+  .decrease{
+    float:left;
+    cursor:pointer;
+    color:#ff1744;
+    }
+    
+    @media screen and (max-width: 600px){
+      #root{
+        padding: 1rem;
+        }
+        .input-field{
+          width:90%;
+          display:inline-block;
+          font-size:1.5em;
+          }
+          .addition, .subtraction{
+            height:30px;
+            line-height:30px;
+            border-top:1px dotted #ccc;
+            }
+            }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
 
-li {
-  margin-bottom: 8px;
-}
+.reset{
+  background:none;
+  outline: none;
+  border: none;
+  text-decoration: underline;
+  color:#8e8e8e;
+  cursor: pointer;
+  }
+
+

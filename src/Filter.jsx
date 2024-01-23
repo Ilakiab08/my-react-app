@@ -9,7 +9,7 @@ function Filter() {
 
  return (
     <div>
-      <input type="text" value={filter} onChange={e => setFilter(e.target.value)} />
+      <input className="input-field" type="text" value={filter} onChange={e => setFilter(e.target.value)} />
       <ul>
         {filteredItems.map((item, index) => (
           <li key={index}>{item}</li>
