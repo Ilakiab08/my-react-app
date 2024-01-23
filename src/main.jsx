@@ -1,9 +1,9 @@
 
-
+import { jsxDEV as _jsxDEV } from 'react/jsx-dev-runtime';
 
 import Counter from '/src/Counter';
 import Filter from '/src/Filter'; 
-import './src/App.css';
+import './App.css';
 import React from 'react';
 
 const App = () => {
