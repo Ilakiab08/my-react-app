@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+
+
+const items = ['Car', 'Bus', 'Train', 'Flight'];
 
 function Filter() {
  const [filter, setFilter] = useState('');
