@@ -10,7 +10,7 @@ function Filter() {
  return (
     <div>
       <input className="input-field" type="text" value={filter} onChange={e => setFilter(e.target.value)} />
-      <ul>
+      <ul className="list">
         {filteredItems.map((item, index) => (
           <li key={index}>{item}</li>
         ))}

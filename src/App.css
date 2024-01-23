@@ -21,15 +21,22 @@ margin:20px auto;
 border:3px solid #4caf50;
 text-align:left;
 font-size:2em;
-color:#4caf50;
+color:black;
 border-radius:6px;
 }
 
 .increase{
+  font-size: large;
+  color: green;
+  width: 100px;
+  height: 40px;
   float:right;
   cursor:pointer;
   }
   .decrease{
+    font-size: large;
+    width: 100px;
+    height: 40px;
     float:left;
     cursor:pointer;
     color:#ff1744;
@@ -44,21 +51,31 @@ border-radius:6px;
           display:inline-block;
           font-size:1.5em;
           }
-          .addition, .subtraction{
-            height:30px;
-            line-height:30px;
-            border-top:1px dotted #ccc;
+          .increase, .decrease {
+            margin-top: 1rem;
             }
-            }
+          }
 
 
 .reset{
-  background:none;
-  outline: none;
-  border: none;
-  text-decoration: underline;
+  font-size: large;
+    width: 100px;
+    height: 40px;
+   
+    cursor:pointer;
+    
   color:#8e8e8e;
-  cursor: pointer;
+  
   }
 
+.list{
+align-items: center;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 20px;
+}
 
+
+  
+ 
