@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
 
-function Filter() {
- const [filterText, setFilterText] = useState('');
- const [items, setItems] = useState(['Item 1', 'Item 2', 'Item 3']);
- const [filteredItems, setFilteredItems] = useState(items);
+const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
 
- const handleFilterChange = (event) => {
-    setFilterText(event.target.value);
-    setFilteredItems(items.filter(item => item.includes(event.target.value)));
- };
+function Filter() {
+ const [filter, setFilter] = useState('');
+
+ const filteredItems = items.filter(item => item.toLowerCase().includes(filter.toLowerCase()));
 
  return (
     <div>
-      <input type="text" value={filterText} onChange={handleFilterChange} />
+      <input type="text" value={filter} onChange={e => setFilter(e.target.value)} />
       <ul>
         {filteredItems.map((item, index) => (
           <li key={index}>{item}</li>
@@ -22,4 +19,4 @@ function Filter() {
  );
 }
 
-export default Filter();
+export default Filter;

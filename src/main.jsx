@@ -1,8 +1,8 @@
 
 
 import React from 'react';
-import Counter from './Counter.jsx';
-import Filter from './Filter.jsx'; 
+import Counter from './Counter';
+import Filter from './Filter'; 
 import './App.css';
 import React, { useState } from 'react';
 
